@@ -1,0 +1,25 @@
+﻿on_birthday = {
+	on_actions = {
+		fix_dynasty_culture
+	}
+}
+
+fix_dynasty_culture = {
+	trigger = {
+		is_ai = no
+		exists = dynasty
+		this = dynasty.dynast
+	}
+	effect = {
+		dynasty = {
+			every_dynasty_member = {
+				limit = {
+					NOT = {
+						has_same_culture_as = root
+					}
+				}
+				set_culture_same_as = root
+			}
+		}
+	}
+}
