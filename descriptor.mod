@@ -4,5 +4,5 @@ tags={
 	"Culture"
 }
 name="Fixed Dynasty Culture"
-supported_version="1.8.*"
+supported_version="1.10.*"
 remote_file_id="2870399421"
